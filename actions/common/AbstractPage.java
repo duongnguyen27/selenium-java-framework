@@ -22,4 +22,8 @@ public class AbstractPage {
 	public Boolean isElementVisible(By locator) {
 		return true;
 	}
+	
+	public Boolean isElementInVisible(By locator) {
+		return true;
+	}
 }
