@@ -24,6 +24,7 @@ public class AbstractPage {
 	}
 	
 	public Boolean isElementInVisible(By locator) {
+		// test commit 
 		return true;
 	}
 }
