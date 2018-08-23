@@ -1,10 +1,8 @@
 package common;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
-public class AbstractPage {
-	protected WebDriver driver;
+public class AbstractPage extends DriverSettings {
 	
 	public void clickElement(By locator) {
 		driver.findElement(locator).click();

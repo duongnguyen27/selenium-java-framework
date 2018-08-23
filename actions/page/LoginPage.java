@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import common.AbstractPage;
 import guru.LoginUI;
 
-public class LoginPage extends AbstractPage{
+public class LoginPage extends AbstractPage {
 	
 	public LoginPage(WebDriver driver) {
 		super.driver = driver;
@@ -15,6 +15,6 @@ public class LoginPage extends AbstractPage{
 		inputTextToElement(LoginUI.txtUsername, username);
 		inputTextToElement(LoginUI.txtPassword, password);
 		clickElement(LoginUI.btnLogin);
-		return new DashboardPage(driver);
+		return (DashboardPage) InstanceManager.getInstance(driver, "DashboardPage");
 	}
 }
