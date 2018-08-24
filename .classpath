@@ -6,5 +6,7 @@
 	<classpathentry kind="src" path="interface"/>
 	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="lib" path="lib/selenium-server-standalone-2.53.1.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-api-2.11.1.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-core-2.11.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

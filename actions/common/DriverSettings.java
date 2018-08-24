@@ -16,6 +16,7 @@ public class DriverSettings {
 
 		default:
 			System.setProperty("webdriver.chrome.driver", "./webdriver/chromedriver.exe");
+			Log.info("Starting Chrome driver");
 			driver = new ChromeDriver();
 			break;
 		}

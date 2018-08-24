@@ -13,7 +13,7 @@ public class LoginSuccess extends AbstractTest {
 	
 	@BeforeClass
 	public void beforeClass() {
-		setUp("gc", "http://demo.guru99.com/V1/index.php");
+		setUp("gc", "http://demo.guru99.com/V4/index.php");
 	}
 
 	@Test

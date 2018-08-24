@@ -10,19 +10,20 @@ public class InstanceManager {
 	private static LoginPage loginPage;
 
 	public static AbstractPage getInstance(WebDriver driver, String page) {
-		if (page == "LoginPage") {
+		switch (page) {
+		case "LoginPage":
 			if (loginPage == null) {
 				loginPage = new LoginPage(driver);
 			}
 			return loginPage;
-		}
-		else if (page == "DashboardPage") {
+
+		case "DashboardPage":
 			if (dashboardPage == null) {
 				dashboardPage = new DashboardPage(driver);
 			}
 			return dashboardPage;
-		}
-		else {
+
+		default:
 			return null;
 		}
 	}

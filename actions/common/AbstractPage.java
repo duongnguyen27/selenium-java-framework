@@ -4,20 +4,22 @@ import org.openqa.selenium.By;
 
 public class AbstractPage extends DriverSettings {
 	
-	public void clickElement(By locator) {
+	public void clickElement(String locName, By locator) {
+		Log.info("Click [" + locName + "]");
 		driver.findElement(locator).click();
 	}
 	
-	public void inputTextToElement(By locator, String text) {
+	public void inputTextToElement(String locName, By locator, String text) {
+		Log.info("Input text [" + text + "] to [" +  locName + "]");
 		driver.findElement(locator).sendKeys(text);
 	}
 	
-	public String getElementText(By locator) {
+	public String getElementText(String locName, By locator) {
 		String text = driver.findElement(locator).getText();
 		return text;
 	}
 	
-	public Boolean isElementVisible(By locator) {
+	public Boolean isElementVisible(String locName, By locator) {
 		return true;
 	}
 }
