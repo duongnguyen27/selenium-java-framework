@@ -1,6 +1,5 @@
 package com.guru.login;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -12,22 +11,20 @@ import page.LoginPage;
 
 public class LoginSuccess extends AbstractTest {
 	
-	WebDriver driver;
-	LoginPage loginPage = new LoginPage(driver);
-	
 	@BeforeClass
-	public void tearUp() {
-		setUp(driver, "ff", "google.com");
+	public void beforeClass() {
+		setUp("gc", "http://demo.guru99.com/V4/index.php");
 	}
- 	
+
 	@Test
 	public void TestLoginSuccess() {
-		DashboardPage dashboardPage = loginPage.loginPage("John", "Secret");
+		LoginPage loginPage = new LoginPage(driver);
+		DashboardPage dashboardPage = loginPage.loginPage("mngr150300", "UnAqEgY");
 		Assert.assertTrue(dashboardPage.verifyWelcomeMsgDisplay());
 	}
-	
+
 	@AfterClass
-	public void tearDown() {
-		tearDown(driver);
+	public void afterClass() {
+		tearDown();
 	}
 }

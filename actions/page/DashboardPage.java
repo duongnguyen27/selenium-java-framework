@@ -12,6 +12,6 @@ public class DashboardPage extends AbstractPage {
 	}
 	
 	public Boolean verifyWelcomeMsgDisplay() {
-		return isElementVisible(DashboardUI.lblWelcomeMsg);
+		return isElementVisible(null, DashboardUI.lblWelcomeMsg);
 	}
 }
