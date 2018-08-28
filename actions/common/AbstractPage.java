@@ -114,4 +114,18 @@ public class AbstractPage {
 		Alert alert = driver.switchTo().alert();
 		alert.sendKeys(text);
 	}
+	
+	public String getElementText(By locator) {
+		String text = driver.findElement(locator).getText();
+		return text;
+	}
+	
+	public Boolean isElementVisible(By locator) {
+		return true;
+	}
+	
+	public void inputTextToElement(By locator, String text) {
+		driver.findElement(locator).sendKeys(text);
+	}
+	
 }
