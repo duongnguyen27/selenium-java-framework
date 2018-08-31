@@ -17,7 +17,7 @@ public class CreateAccount extends AbstractTest{
 	MyDashboardPage myDashboard = new MyDashboardPage(driver);
 	@BeforeClass
 	public void tearUp() {
-		setUp(driver, "ff", "http://live.guru99.com");
+		setUp(driver, "b", "http://live.guru99.com");
 	}
  	
 	@Test
