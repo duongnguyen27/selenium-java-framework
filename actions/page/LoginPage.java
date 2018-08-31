@@ -11,7 +11,7 @@ public class LoginPage extends AbstractPage {
 		super.driver = driver;
 	}
 	
-	public DashboardPage loginPage(String username, String password) {
+	public DashboardPage login(String username, String password) {
 		inputTextToElement("Username textbox", LoginUI.txtUsername, username);
 		inputTextToElement("Password textbox", LoginUI.txtPassword, password);
 		clickElement("Login button", LoginUI.btnLogin);

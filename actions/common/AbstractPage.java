@@ -10,6 +10,8 @@ public class AbstractPage extends DriverSettings {
 	}
 	
 	public void inputTextToElement(String locName, By locator, String text) {
+		Log.info("Clear text from [" +  locName + "]");
+		driver.findElement(locator).clear();
 		Log.info("Input text [" + text + "] to [" +  locName + "]");
 		driver.findElement(locator).sendKeys(text);
 	}
