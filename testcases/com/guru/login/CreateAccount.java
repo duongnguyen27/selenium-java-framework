@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import common.AbstractTest;
+import common.Constants;
 import page.CreateAccountPage;
 import page.DashboardPage;
 import page.MyDashboardPage;
@@ -17,7 +18,7 @@ public class CreateAccount extends AbstractTest{
 	MyDashboardPage myDashboard = new MyDashboardPage(driver);
 	@BeforeClass
 	public void tearUp() {
-		setUp(driver, "b", "http://live.guru99.com");
+		setUp("gc", Constants.GURU_URL);
 	}
  	
 	@Test
@@ -28,6 +29,6 @@ public class CreateAccount extends AbstractTest{
 	
 	@AfterClass
 	public void tearDown() {
-		tearDown(driver);
+		tearDown();
 	}
 }

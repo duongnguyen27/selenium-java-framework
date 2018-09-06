@@ -1,33 +1,31 @@
 package com.guru.login;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import common.AbstractTest;
+import common.Constants;
 import page.DashboardPage;
 import page.LoginPage;
 
 public class LoginSuccess extends AbstractTest {
 	
-	WebDriver driver;
-	LoginPage loginPage = new LoginPage(driver);
-	
 	@BeforeClass
-	public void tearUp() {
-		setUp(driver, "ff", "google.com");
+	public void beforeClass() {
+		setUp("gc", Constants.GURU_URL);
 	}
- 	
+
 	@Test
 	public void TestLoginSuccess() {
-		DashboardPage dashboardPage = loginPage.loginPage("John", "Secret");
+		LoginPage loginPage = new LoginPage(driver);
+		DashboardPage dashboardPage = loginPage.login("mngr150300", "UnAqEgY");
 		Assert.assertTrue(dashboardPage.verifyWelcomeMsgDisplay());
 	}
-	
+
 	@AfterClass
-	public void tearDown() {
-		tearDown(driver);
+	public void afterClass() {
+		tearDown();
 	}
 }

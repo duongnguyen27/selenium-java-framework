@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="TestNGSuite" parallel="tests" thread-count="2">
-	<test name="Group">
-		<groups>
-			<run>
-				<include name="Wait Tests" />
-			</run>
-		</groups>
+	<test name="test">
 		<classes>
-			<class name="nashtech.automation.testng.Topic_11_Group" />
-		</classes>
-	</test>
-	<test name="Priority">
-		<classes>
-			<class name="nashtech.automation.testng.Topic_11_Priority" />
-		</classes>
-	</test>
-	<test name="Parameter">
-		<parameter name="browser" value="gc" />
-		<classes>
-			<class name="nashtech.automation.testng.Topic_11_Parameter" />
+			<class name="com.guru.login.LoginSuccess" />
 		</classes>
 	</test>
 </suite>
