@@ -14,12 +14,10 @@ public class DashboardPage extends AbstractPage {
 	public Boolean verifyWelcomeMsgDisplay() {
 		return isElementVisible(null, DashboardUI.lblWelcomeMsg);
 	}
-	
-	public CreateAccountPage createAnAccount()
+		
+	public NewCustomerPage goToNewCustomerPage()
 	{
-		CreateAccountPage createAcc = new CreateAccountPage(driver);
-		clickElement(DashboardUI.myAccBtn);
-		clickElement(DashboardUI.createAccBtn);
-		return createAcc;
+		clickElement("New Customer", DashboardUI.btnNewCustomer);
+		return (NewCustomerPage) InstanceManager.getInstance(driver, "NewCustomerPage");
 	}
 }

@@ -23,11 +23,13 @@ public class InstanceManager {
 				dashboardPage = new DashboardPage(driver);
 			}
 			return dashboardPage;
+			
 		case "NewCustomerPage":
 			if (newCustomer == null) {
 				newCustomer = new NewCustomerPage(driver);
 			}
 			return dashboardPage;
+			
 		default:
 			return null;
 		}

@@ -1,13 +1,11 @@
 package com.guru.login;
 
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import common.AbstractTest;
 import common.Constants;
-import page.BankGuruPage;
 import page.DashboardPage;
 import page.LoginPage;
 import page.NewCustomerPage;
@@ -29,9 +27,7 @@ public class BankGuru extends AbstractTest {
 		//Thread.sleep(10000);
 		
 		// New Customer 
-		BankGuruPage bankGuruPage = new BankGuruPage(driver);
-		NewCustomerPage newCustomerPage = new NewCustomerPage(driver);
-		newCustomerPage = bankGuruPage.goToNewCustomerPage();
+		NewCustomerPage newCustomerPage =  dashboardPage.goToNewCustomerPage();
 		
 	}
 
