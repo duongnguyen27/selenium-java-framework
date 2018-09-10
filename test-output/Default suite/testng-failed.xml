@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.guru.login.CreateAccount">
+      <class name="com.guru.login.BankGuru">
         <methods>
-          <include name="TC01_CreateAccount"/>
-          <include name="tearUp"/>
+          <include name="afterClass"/>
+          <include name="TC01_NameCannotEmpty"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.guru.login.CreateAccount -->
+      </class> <!-- com.guru.login.BankGuru -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
