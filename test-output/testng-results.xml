@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19878" started-at="2018-09-10T08:00:53Z" finished-at="2018-09-10T08:01:13Z">
+  <suite name="Default suite" duration-ms="20675" started-at="2018-09-10T08:22:52Z" finished-at="2018-09-10T08:23:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19878" started-at="2018-09-10T08:00:53Z" finished-at="2018-09-10T08:01:13Z">
+    <test name="Default test" duration-ms="20675" started-at="2018-09-10T08:22:52Z" finished-at="2018-09-10T08:23:13Z">
       <class name="com.guru.login.BankGuru">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.guru.login.BankGuru@7cdbc5d3]" name="beforeClass" is-config="true" duration-ms="13473" started-at="2018-09-10T15:00:53Z" finished-at="2018-09-10T15:01:06Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.guru.login.BankGuru@7cdbc5d3]" name="beforeClass" is-config="true" duration-ms="14000" started-at="2018-09-10T15:22:52Z" finished-at="2018-09-10T15:23:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="TC01_NameCannotEmpty()[pri:0, instance:com.guru.login.BankGuru@7cdbc5d3]" name="TC01_NameCannotEmpty" duration-ms="5215" started-at="2018-09-10T15:01:06Z" finished-at="2018-09-10T15:01:12Z">
+        <test-method status="FAIL" signature="TC01_NameCannotEmpty()[pri:0, instance:com.guru.login.BankGuru@7cdbc5d3]" name="TC01_NameCannotEmpty" duration-ms="5676" started-at="2018-09-10T15:23:06Z" finished-at="2018-09-10T15:23:12Z">
           <exception class="java.lang.ClassCastException">
             <message>
               <![CDATA[page.DashboardPage cannot be cast to page.NewCustomerPage]]>
@@ -19,7 +19,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.ClassCastException: page.DashboardPage cannot be cast to page.NewCustomerPage
 	at page.BankGuruPage.goToNewCustomerPage(BankGuruPage.java:16)
-	at com.guru.login.BankGuru.TC01_NameCannotEmpty(BankGuru.java:32)
+	at com.guru.login.BankGuru.TC01_NameCannotEmpty(BankGuru.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -50,7 +50,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_NameCannotEmpty -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.guru.login.BankGuru@7cdbc5d3]" name="afterClass" is-config="true" duration-ms="1176" started-at="2018-09-10T15:01:12Z" finished-at="2018-09-10T15:01:13Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.guru.login.BankGuru@7cdbc5d3]" name="afterClass" is-config="true" duration-ms="988" started-at="2018-09-10T15:23:12Z" finished-at="2018-09-10T15:23:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

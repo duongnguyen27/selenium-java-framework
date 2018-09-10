@@ -13,7 +13,7 @@ public class BankGuruPage extends AbstractPage{
 	public NewCustomerPage goToNewCustomerPage()
 	{
 		clickElement("New Customer", BankGuruUI.btnNewCustomer);
-		return (NewCustomerPage) InstanceManager.getInstance(driver, "DashboardPage");
+		return (NewCustomerPage) InstanceManager.getInstance(driver, "NewCustomerPage");
 	}
 	
 
