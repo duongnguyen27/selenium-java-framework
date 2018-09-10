@@ -10,6 +10,7 @@ import common.Constants;
 import page.BankGuruPage;
 import page.DashboardPage;
 import page.LoginPage;
+import page.NewCustomerPage;
 
 public class BankGuru extends AbstractTest {
 	String userName = "mngr152551";
@@ -17,7 +18,7 @@ public class BankGuru extends AbstractTest {
 	
 	@BeforeClass
 	public void beforeClass() {
-		setUp("ff", Constants.GURU_URL);
+		setUp("gc", Constants.GURU_URL);
 	}
 
 	@Test
@@ -29,7 +30,8 @@ public class BankGuru extends AbstractTest {
 		
 		// New Customer 
 		BankGuruPage bankGuruPage = new BankGuruPage(driver);
-		bankGuruPage.goToNewCustomerPage();
+		NewCustomerPage newCustomerPage = new NewCustomerPage(driver);
+		newCustomerPage = bankGuruPage.goToNewCustomerPage();
 		
 	}
 
