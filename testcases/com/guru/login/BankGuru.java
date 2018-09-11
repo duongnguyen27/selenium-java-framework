@@ -31,7 +31,6 @@ public class BankGuru extends AbstractTest {
 		// New Customer 
 		NewCustomerPage newCustomerPage =  dashboardPage.goToNewCustomerPage();
 		newCustomerPage.SendKeyValueField("empty", NewCustomerUI.txtCustomerName, "");
-		
 		//textIsDisplayed = getTextElement("Customer Name", NewCustomerUI.txtCustomerNameVerify);
 		Thread.sleep(10000);
 	}
