@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.UUID;
 
 public class CommonFunction {
-	public static String RandomString() {
+	public static String randomString() {
 		String alphabet = "abcdefghijklmnopqrstuvwxyz";
 		Random random = new Random();
 		char c = alphabet.charAt(random.nextInt(26));
@@ -12,7 +12,7 @@ public class CommonFunction {
 		return s;
 	}
 
-	public static String RandomNumber() {
+	public static String randomNumber() {
 		int randomInt;
 		String random;
 		Random rg = new Random();
@@ -29,6 +29,6 @@ public class CommonFunction {
 	 
 	public static String randomPassword()
 	{
-		return RandomString() + RandomNumber();
+		return randomString() + randomNumber();
 	}
 }

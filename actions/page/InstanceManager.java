@@ -8,7 +8,7 @@ public class InstanceManager {
 
 	private static DashboardPage dashboardPage;
 	private static LoginPage loginPage;
-	private static NewCustomerPage newCustomer;
+	private static NewCustomerPage newCustomerPage;
 	
 	public static AbstractPage getInstance(WebDriver driver, String page) {
 		switch (page) {
@@ -25,10 +25,10 @@ public class InstanceManager {
 			return dashboardPage;
 			
 		case "NewCustomerPage":
-			if (newCustomer == null) {
-				newCustomer = new NewCustomerPage(driver);
+			if (newCustomerPage == null) {
+				newCustomerPage = new NewCustomerPage(driver);
 			}
-			return dashboardPage;
+			return newCustomerPage;
 			
 		default:
 			return null;
