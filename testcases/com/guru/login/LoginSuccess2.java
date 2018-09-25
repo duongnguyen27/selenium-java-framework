@@ -10,11 +10,11 @@ import common.Constants;
 import page.DashboardPage;
 import page.LoginPage;
 
-public class LoginSuccess extends AbstractTest {
+public class LoginSuccess2 extends AbstractTest {
 	
 	@BeforeClass
 	public void beforeClass() {
-		openBrowser("gc", Constants.GURU_URL);
+		setUp("gc", Constants.GURU_URL);
 	}
 
 	@Test
@@ -26,6 +26,6 @@ public class LoginSuccess extends AbstractTest {
 
 	@AfterClass
 	public void afterClass() {
-		closeBrowser();
+		tearDown();
 	}
 }

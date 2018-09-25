@@ -3,6 +3,7 @@
 	<test name="test">
 		<classes>
 			<class name="com.guru.login.LoginSuccess" />
+			<class name="com.guru.login.LoginSuccess2" />
 		</classes>
 	</test>
 </suite>
