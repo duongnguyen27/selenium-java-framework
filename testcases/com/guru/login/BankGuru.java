@@ -18,7 +18,7 @@ public class BankGuru extends AbstractTest {
 	
 	@BeforeClass
 	public void beforeClass() {
-		setUp("gc", Constants.GURU_URL);
+		openBrowser("gc", Constants.GURU_URL);
 	}
 
 	@Test
@@ -37,6 +37,6 @@ public class BankGuru extends AbstractTest {
 
 	@AfterClass
 	public void afterClass() {
-		tearDown();
+		closeBrowser();
 	}
 }
