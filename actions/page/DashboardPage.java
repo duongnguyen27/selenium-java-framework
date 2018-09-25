@@ -14,4 +14,10 @@ public class DashboardPage extends AbstractPage {
 	public Boolean verifyWelcomeMsgDisplay() {
 		return isElementVisible(null, DashboardUI.lblWelcomeMsg);
 	}
+		
+	public NewCustomerPage goToNewCustomerPage()
+	{
+		clickElement("New Customer", DashboardUI.btnNewCustomer);
+		return (NewCustomerPage) InstanceManager.getInstance(driver, "NewCustomerPage");
+	}
 }
