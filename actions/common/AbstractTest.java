@@ -1,5 +1,7 @@
 package common;
 
+import org.testng.Assert;
+
 public class AbstractTest extends DriverSettings {
 
 	public void openBrowser(String browser, String url) {
@@ -36,6 +38,14 @@ public class AbstractTest extends DriverSettings {
 		} catch (Exception e) {
 			Log.info(e.toString());
 			System.out.println(e.getMessage());
+		}
+	}
+	
+	public void verifyEqual(String expected, String actual) {
+		try {
+			Assert.assertEquals(expected, actual);
+		} catch (Exception e) {
+			// TODO: handle exception
 		}
 	}
 }
